@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     def destroy 
         game = Collection.find_by(game_id: params[:id])
         game.destroy
-        render json: {message: 'Game was successfully destroyed.'}
+        render json: {message: 'Game was successfully removed.'}
     end
 
     private 

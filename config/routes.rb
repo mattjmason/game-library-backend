@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   resources :games
 
   #USER ROUTES
-  get 'user/collections', to: 'users#collection'
-  delete '/user/collections/:id', to: 'users#destroy'
+  get 'user/collection', to: 'users#collection'
+  delete '/user/collection/:id', to: 'users#destroy'
   resources :users, only: [:create, :index, :destroy]
 
   #SESSION ROUTES
@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
   #GAME ROUTES
   post '/games/:id', to: 'games#game_collection'
+  # get '/game/:id'
 end

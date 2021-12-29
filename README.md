@@ -1,24 +1,32 @@
 # README
+# Description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a continuation and the backend of the Game Library.
 
-Things you may want to cover:
+# Installation Instructions
 
-* Ruby version
+- Fork and clone this repo
 
-* System dependencies
+- Open directory and run
 
-* Configuration
+`bundle install`
 
-* Database creation
+- Create Database
 
-* Database initialization
+`rails db:migrate`
 
-* How to run the test suite
+- Run the Rails server;
 
-* Services (job queues, cache servers, search engines, etc.)
+` rails s -p 3001`
 
-* Deployment instructions
+- Fork and clone frotend (if needed): https://github.com/mattjmason/game-library-frontend
 
-* ...
+- Open frontend directory
+
+- Type ` npm install` in the terminal.
+
+- Start the server by typing `npm start`
+
+# License
+
+The gem is available as open source under the terms of the MIT License.
